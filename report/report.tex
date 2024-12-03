@@ -44,7 +44,13 @@
 % добавление картинок в качестве фона
 \usepackage{background}
 
+% Устанавливает тире между номером и текстом
+\usepackage[justification=centering]{caption}
 
+\usepackage{titlesec}
+
+
+\captionsetup{labelsep=endash}
 
 \captionsetup[figure]{name={Рисунок},labelsep=endash} 
 \captionsetup[table]{name={Таблица},labelsep=endash} 
@@ -54,18 +60,17 @@
 
 \setlength{\parindent}{12.5mm} 
 
-
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection}{1em}{}
 
 \newcommand{\chipher}{
-        %{\fontsize{16pt}{16pt}\selectfont  КР.ИИ-22.210582-40 03 01}
         {\fontsize{16pt}{16pt}\selectfont  КР.ИИ-21.210563-3 81 00}
 }
 
 \newcommand{\theme}{Разработка веб-приложения для поиска кулинарных рецептов с использованием нейронной сети}
 
-\newcommand{\student}{Ливтинюк Т. В.}
+\newcommand{\student}{Литвинюк Т.В.}
 
-\newcommand{\teacher}{Кулеша В. И.}
+\newcommand{\teacher}{Кулеша В.И.}
 
 
 \begin{document}
